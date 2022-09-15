@@ -73,3 +73,17 @@ void Service::updateState(std::string strState)
         break;
     }
 }
+
+void Service::updateEvent(DHT_Data dhtData)
+{
+    float temp;
+    temp = (float)dhtData.Temp + (float)(dhtData.TempDec/10.0);
+
+    if(temp > 26)
+    {
+        lightState = LIGHT_OFF;
+    }
+    
+
+    view->setState(lightState);
+}

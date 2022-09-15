@@ -31,4 +31,6 @@ void Controller::updateEvent(std::string strBtn)
 void  Controller::updateTempHumid(DHT_Data dhtData)
 {
     tempHumidService->updateEvent(dhtData);
+    service->updateEvent(dhtData);
 }
+

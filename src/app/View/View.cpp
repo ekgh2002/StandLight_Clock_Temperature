@@ -49,7 +49,11 @@ void View::lightView()
         case LIGHT_5:
             lightOn_5();
         
-        break;    
+        break;
+        case LIGHT_WARN:
+            lightwarning();
+        break;
+
     }
 }
 
@@ -129,6 +133,20 @@ void View::lightOff()
     light3->Off();
     light4->Off();
     light5->Off();
+}
+
+void View::lightwarning()
+{
+     char buff[30];
+     sprintf(buff, "LightWARN");
+     lcd->WriteStringXY(0, 0, buff);
+    lcd->backLightOn();
+    light1->Off();
+    light2->Off();
+    light3->Off();
+    light4->Off();
+    light5->Off();
+
 }
 
 // void View::LCDplay0()

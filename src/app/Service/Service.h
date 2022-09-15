@@ -4,6 +4,7 @@
 #include <string>
 #include "View.h"
 #include "LightState.h"
+#include "DHT11_Data.h"
 
 // enum {LIGHT_OFF, LIGHT_1, LIGHT_2, LIGHT_3, LIGHT_4, LIGHT_5};
 
@@ -18,7 +19,7 @@ public:
     Service(View *viewer);
     virtual ~Service();
     void updateState(std::string strState);
-
+    void updateEvent(DHT_Data dhtData);
 };
 
 #endif

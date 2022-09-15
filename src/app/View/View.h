@@ -29,13 +29,14 @@ public:
     void lightOn_3();
     void lightOn_4();
     void lightOn_5();
+    void lightwarning();
     void lightOff();
-    void LCDplay0();
-    void LCDplay1();
-    void LCDplay2();
-    void LCDplay3();
-    void LCDplay4();
-    void LCDplay5();
+    // void LCDplay0();
+    // void LCDplay1();
+    // void LCDplay2();
+    // void LCDplay3();
+    // void LCDplay4();
+    // void LCDplay5();
 };
 
 #endif /* __VIEW_H__ */
