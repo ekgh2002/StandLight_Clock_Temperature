@@ -55,10 +55,10 @@ void View::lightView()
 
 void View::lightOn_1()
 {
-    char buff[30];
-    sprintf(buff, "   Light 1   ");
-    lcd->WriteStringXY(0, 0, buff);
-    lcd->backLightOn();
+     char buff[30];
+     sprintf(buff, " Light 1 ");
+     lcd->WriteStringXY(0, 0, buff);
+    // lcd->backLightOn();
     light1->On();
     light2->Off();
     light3->Off();
@@ -68,10 +68,10 @@ void View::lightOn_1()
 
 void View::lightOn_2()
 {
-    char buff[30];
-    sprintf(buff, "   Light 2   ");
-    lcd->WriteStringXY(0, 0, buff);
-    lcd->backLightOn();
+     char buff[30];
+     sprintf(buff, " Light 2 ");
+     lcd->WriteStringXY(0, 0, buff);
+    // lcd->backLightOn();
     light1->On();
     light2->On();
     light3->Off();
@@ -81,10 +81,10 @@ void View::lightOn_2()
 
 void View::lightOn_3()
 {
-    char buff[30];
-    sprintf(buff, "   Light 3   ");
-    lcd->WriteStringXY(0, 0, buff);
-    lcd->backLightOn();
+     char buff[30];
+     sprintf(buff, " Light 3 ");
+     lcd->WriteStringXY(0, 0, buff);
+    // lcd->backLightOn();
     light1->On();
     light2->On();
     light3->On();
@@ -94,10 +94,10 @@ void View::lightOn_3()
 
 void View::lightOn_4()
 {
-    char buff[30];
-    sprintf(buff, "   Light 4   ");
-    lcd->WriteStringXY(0, 0, buff);
-    lcd->backLightOn();
+     char buff[30];
+     sprintf(buff, " Light 4 ");
+     lcd->WriteStringXY(0, 0, buff);
+    // lcd->backLightOn();
     light1->On();
     light2->On();
     light3->On();
@@ -107,10 +107,10 @@ void View::lightOn_4()
 
 void View::lightOn_5()
 {
-    char buff[30];
-    sprintf(buff, "   Light 5   ");
-    lcd->WriteStringXY(0, 0, buff);
-    lcd->backLightOn();
+     char buff[30];
+     sprintf(buff, " Light 5 ");
+     lcd->WriteStringXY(0, 0, buff);
+    // lcd->backLightOn();
     light1->On();
     light2->On();
     light3->On();
@@ -120,10 +120,10 @@ void View::lightOn_5()
 
 void View::lightOff()
 {
-    char buff[30];
-    sprintf(buff, "   Light OFF   ");
-    lcd->WriteStringXY(0, 0, buff);
-    lcd->backLightOff();
+     char buff[30];
+     sprintf(buff, "LightOFF ");
+     lcd->WriteStringXY(0, 0, buff);
+    // lcd->backLightOff();
     light1->Off();
     light2->Off();
     light3->Off();
